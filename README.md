@@ -6,8 +6,7 @@ page_type: sample
 languages:
 - python
 products:
-- raspberry pi
-urlFragment: splashscreen
+- raspberry
 ---
 # SmartCharger Server Application
 
