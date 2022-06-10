@@ -7,7 +7,6 @@ languages:
 - python
 products:
 - raspberry
----
 # SmartCharger Server Application
 
 This is simple TCP/IP server application featuring running on a raspberry unit in a local network.
