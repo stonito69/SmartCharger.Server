@@ -14,4 +14,8 @@ urlFragment: splashscreen
 This is simple TCP/IP server application featuring running on a raspberry unit in a local network.
 It receives status from the Phone with a SmartCharger.Android application and switch smart outlet ON or OFF, depending of the battery level and defined parameters.
 
-![SmartCharger Android screen](Screenshots/Screenshot.png)
+![Raspberry setup](Screenshots/raspberry.jpg)
+![Outlet](Screenshots/outlet.jpg)
+![Phone](Screenshots/phone.jpg)
+
+
