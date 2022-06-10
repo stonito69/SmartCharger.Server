@@ -14,8 +14,7 @@ For sniffing I used Arduino Nano with a RF 433MHz receiver, and a code from this
 This particular outlet is configured by long pressing its button, it starts blinking, then pressing the button on the remote, configures it to the letter (A,B,C,D) you pressed. In the code I used sniffed codes for button A ON i OFF.
 ![Phone](Screenshots/phone.jpg)
 This is how it looks in the end.
-rpi-rf
-======
+
 
 Introduction
 ------------
