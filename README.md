@@ -1,4 +1,4 @@
-# SmartCharger Server Application
+# SmartCharger Server 
 
 This is simple TCP/IP server application featuring running on a raspberry unit installed in a local network.
 It receives status from the Phone with a SmartCharger.Android application and switch smart outlet ON or OFF, depending of the battery level and defined parameters.
@@ -6,15 +6,6 @@ Language is Python, version 3.
 
 ![Raspberry setup](Screenshots/raspberry.jpg)
 In this project I was using the FS1000A transmitter and corresponding receiver, but it should also work with other 433MHz transmitter/receiver modules that work in a similar fashion. These RF modules are very popular among the Arduino tinkerers and are used on a wide variety of applications that require wireless control.
-![Outlet set](Screenshots/outlet_set.jpg)
-Smart outlet set I bought for 24 EUR.
-I used its remote controller to sniff the communication and to get the codes for switching on and off one outlet.
-For sniffing I used Arduino Nano with a RF 433MHz receiver, and a code from this project https://github.com/Martin-Laclaustra/rc-switch/, getting the code busted took a second, for each button ON and OFF this smart outlet set uses two different codes interchangeably, but one for each will do.
-![Outlet](Screenshots/outlet.jpg)
-This particular outlet is configured by long pressing its button, it starts blinking, then pressing the button on the remote, configures it to the letter (A,B,C,D) you pressed. In the code I used sniffed codes for button A ON i OFF.
-![Phone](Screenshots/phone.jpg)
-This is how it looks in the end.
-
 
 Introduction
 ------------
@@ -72,21 +63,21 @@ Wiring diagram (example)
 Raspberry Pi 1/2(B+)::
 
                        RPI GPIO HEADER
-                  ____________
-                 |        ____|__
-                 |       |    |  |
-                 |     01|  . x  |02
-                 |       |  . x__|________       RX
-                 |       |  . x__|______  |   ________
-                 |       |  . .  |      | |  |        |
-       TX        |   ____|__x .  |      | |__|VCC     |
-     _______     |  |  __|__x .  |      |    |        |
-    |       |    |  | |  |  x____|______|____|DATA    |
-    |    GND|____|__| |  |  . .  |      |    |        |
-    |       |    |    |  |  . .  |      |    |DATA    |
-    |    VCC|____|    |  |  . .  |      |    |        |
-    |       |         |  |  . .  |      |____|GND     |
-    |   DATA|_________|  |  . .  |           |________|
+                 
+                          _______
+                         |       |
+                       01|  . .  |02
+                  _______|__._x  |
+                 |   ____|__._x  |
+                 |  |    |  . .  |
+       TX        |  |  __|__._x  | 
+     _______     |  | |  |  . .  | 
+    |       |    |  | |  |  . .  |
+    |    GND|____|__| |  |  . .  | 
+    |       |    |    |  |  . .  | 
+    |    VCC|____|    |  |  . .  | 
+    |       |         |  |  . .  | 
+    |   DATA|_________|  |  . .  | 
     |_______|            |  . .  |
                          |  . .  |
                          |  . .  |
@@ -99,14 +90,9 @@ Raspberry Pi 1/2(B+)::
 
     TX:
        GND > PIN 09 (GND)
-       VCC > PIN 02 (5V)
-      DATA > PIN 11 (GPIO17)
-
-    RX:
        VCC > PIN 04 (5V)
-      DATA > PIN 13 (GPIO27)
-       GND > PIN 06 (GND)
-
+      DATA > PIN 10 (GPIO15)
+   
 Usage
 -----
 
