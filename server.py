@@ -90,7 +90,7 @@ class SmartCharger:
     def batteryUpdate(self,level,state):
         self.level=level
         self.state=state
-        self.isOn = (state == 2) or (state == 4)
+        self.isOn = (state == 2) or (state == 4) or (state == 5)
         self.ping=datetime.now()
         if self.isOn:
             if level>=config['BatteryMax'] or level==1: 
