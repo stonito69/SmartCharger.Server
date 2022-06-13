@@ -20,32 +20,6 @@ Supported hardware
 Most generic 433/315MHz capable modules (cost: ~2€) connected via GPIO to a Raspberry Pi.
 
 ![Raspberry setup](http://i.imgur.com/vG89UP9.jpg)
-.. figure::    :alt: 433modules
-
-Compatibility
--------------
-
-Generic RF outlets and most 433/315MHz switches (cost: ~15€/3pcs).
-
-.. figure:: http://i.imgur.com/WVRxvWe.jpg
-   :alt: rfoutlet
-
-
-Chipsets:
-
-* SC5262 / SC5272
-* HX2262 / HX2272
-* PT2262 / PT2272
-* EV1527 / RT1527 / FP1527 / HS1527
-
-For a full list of compatible devices and chipsets see the `rc-switch Wiki`_
-
-Dependencies
-------------
-
-::
-
-    RPi.GPIO
 
 Installation
 ------------
@@ -96,22 +70,11 @@ Raspberry Pi 1/2(B+)::
 Usage
 -----
 
-See `scripts`_ (`rpi-rf_send`_, `rpi-rf_receive`_) which are also shipped as cmdline tools.
+Run script server.py and put it in autostart after boot.
 
 Open Source
 -----------
 
-* The code is licensed under the `BSD Licence`_
-* The project source code is hosted on `GitHub`_
-* Please use `GitHub issues`_ to submit bugs and report issues
-
-.. _rc-switch: https://github.com/sui77/rc-switch
-.. _rc-switch Wiki: https://github.com/sui77/rc-switch/wiki
-.. _BSD Licence: http://www.linfo.org/bsdlicense.html
-.. _GitHub: https://github.com/milaq/rpi-rf
-.. _GitHub issues: https://github.com/milaq/rpi-rf/issues
-.. _scripts: https://github.com/milaq/rpi-rf/blob/master/scripts
-.. _rpi-rf_send: https://github.com/milaq/rpi-rf/blob/master/scripts/rpi-rf_send
-.. _rpi-rf_receive: https://github.com/milaq/rpi-rf/blob/master/scripts/rpi-rf_receive
-
-
+* The code is licensed under the `BSD Licence`
+* The project source code is hosted on `GitHub`
+* Please use `GitHub issues`to submit bugs and report issues
