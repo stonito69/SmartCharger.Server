@@ -10,9 +10,9 @@ In this project I was using the FS1000A transmitter and corresponding receiver, 
 Introduction
 ------------
 
-Python module for sending and receiving 433/315MHz LPD/SRD signals with generic low-cost GPIO RF modules on a Raspberry Pi.
-
-Protocol and base logic ported ported from `rc-switch`_.
+Python software hosting TCP/IP server to allow Android phone to send its battery state information and sending 433Mhz LPD/SRD signals with generic low-cost GPIO RF modules on a Raspberry Pi to switch power outlet On and Off, and thus charging the phone only when desired.
+It also has Ping Timeout function, when Phone doesn't send statuses it will keep the charger On, to prevent it draining battery completely.
+Also it has a Waiting for network function, which is used in automatic boot to wait for the ping to local router to be successful before starting TCP/IP server.
 
 Supported hardware
 ------------------
