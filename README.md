@@ -19,8 +19,8 @@ Supported hardware
 
 Most generic 433/315MHz capable modules (cost: ~2€) connected via GPIO to a Raspberry Pi.
 
-.. figure:: http://i.imgur.com/vG89UP9.jpg
-   :alt: 433modules
+![Raspberry setup](http://i.imgur.com/vG89UP9.jpg)
+.. figure::    :alt: 433modules
 
 Compatibility
 -------------
